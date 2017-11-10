@@ -128,17 +128,96 @@ body{
 #panel2{
 display: flex;
     .panel2Container{
-        flex-wrap: wrap;
+        display: flex;
+        position: relative;
         .imgContainer{
-            height:18vh;
-            width:100vh;
+            //height:18vh;
+            //width:100vh;
             overflow: hidden;
             img{
                 width:100%;
-                position: absolute;
+                //position: absolute;
                 height: 100%;
                 object-fit: cover;
             }
+        }
+        .contContainer{
+            padding:0 3%;
+            position: absolute;
+            //align-self: center;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 300px;
+
+            .panel2Content{
+               
+                h2{
+                    font-size: 25px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+                span{
+                font-size: 38px;
+                text-transform: uppercase;
+                font-weight: 700;
+                background-color: #000;
+                padding: 1% 0;
+            }
+        }
+
+            .panel2PrCta{
+                display: flex;
+                flex-direction: column;
+
+                .panel2Price{
+                    font-weight: bold;
+                    span:first-child{
+                        font-size: 24px;
+                    }
+                    span:last-child{
+                        font-size: 35px;
+                    }
+                }
+
+                a{
+                    padding: 2% 5%;
+                    background-color: white;
+                    font-weight: 700;
+                    color: #000;
+                }
+
+            }
+        }
+        
+
+    }
+
+    .panel2Container:first-child{
+        text-align: left;
+        .contContainer{
+           // left:5%;
+        }
+        h2 {
+            color: #000;
+        }
+        .panel2PrCta{
+        color: #000;
+        }
+
+    }
+    .panel2Container:nth-child(2){
+        text-align: center;
+        .contContainer{
+            //left:40%;
+        }
+        
+    }
+    .panel2Container:last-child{
+        text-align: right;
+        .contContainer{
+           // right:5%;
         }
     }
 
