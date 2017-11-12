@@ -1,6 +1,12 @@
+@font-face {
+    font-family: 'myfont';
+    src: url('fonts/HelveticaNeueLTStd-MdCn.woff') format('woff');
+}
+
 body{
     //margin-left: 8px;
     color:#e2e2e2;
+    font-family: myfont;
 }
 
 #combinedHead{
@@ -154,16 +160,19 @@ display: flex;
             .panel2Content{
                
                 h2{
-                    font-size: 25px;
+                    font-size: 17px;
                     text-transform: uppercase;
                     font-weight: 700;
+                    margin-top: 10px;
+                    margin-bottom: 5px;
                 }
                 span{
-                font-size: 38px;
+                font-size: 34px;
                 text-transform: uppercase;
                 font-weight: 700;
                 background-color: #000;
                 padding: 1% 0;
+                line-height: 50px;
             }
         }
 
@@ -179,6 +188,7 @@ display: flex;
                     span:last-child{
                         font-size: 35px;
                     }
+                    margin: 0px 0 10px 0;
                 }
 
                 a{
@@ -186,6 +196,7 @@ display: flex;
                     background-color: white;
                     font-weight: 700;
                     color: #000;
+                    
                 }
 
             }
@@ -209,7 +220,9 @@ display: flex;
     }
     .panel2Container:nth-child(2){
         text-align: center;
+        
         .contContainer{
+            padding: 0 5%;
             //left:40%;
         }
         
@@ -221,5 +234,28 @@ display: flex;
         }
     }
 
+}
+
+#panel3{
+    .panel3col4Cont{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        margin: auto;
+    }
+    .panel3Cont{
+        width:25%;
+    }
+    h2{
+        margin:0;
+        padding-top:20px;
+    }
+    
+    background-color: black;
+    color: black;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC44Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
